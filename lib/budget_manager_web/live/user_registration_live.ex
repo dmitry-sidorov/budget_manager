@@ -18,6 +18,17 @@ defmodule BudgetManagerWeb.UserRegistrationLive do
         </:subtitle>
       </.header>
 
+      <.text_field
+        id="form-example-142"
+        name="form-example-142"
+        value=""
+        space="small"
+        description="Mishka chelekom text field"
+        label="Text field"
+        placeholder="Text field"
+        variant="default"
+      />
+
       <.simple_form
         for={@form}
         id="registration_form"

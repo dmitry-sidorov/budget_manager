@@ -84,8 +84,11 @@ defmodule BudgetManagerWeb do
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      import BudgetManagerWeb.CoreComponents
+      import BudgetManagerWeb.CoreComponents,
+        only: [header: 1, simple_form: 1, input: 1, error: 1, flash_group: 1, flash: 1]
+
       import BudgetManagerWeb.Gettext
+      use BudgetManagerWeb.Components.MishkaComponents
 
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
